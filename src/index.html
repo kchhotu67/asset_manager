@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Hello</div>
+    <script>
+        let schema = {
+            name: 'Asset1',
+            columns: [
+                {
+                    label: 'Name',
+                    type: 'text',
+                    required: true,
+                    placeholder: 'Enter Name'
+                },
+                {
+                    label: 'Email',
+                    type: 'email',
+                    required: true,
+                    unique: true,
+                    placeholder: 'Enter Email'
+                },
+                {
+                    label: 'Gender',
+                    type: 'select',
+                    options: ['Male', 'Female', 'Other'],
+                    placeholder: 'Select Gender'
+                },
+                {
+                    label: 'Age',
+                    type: 'number',
+                    placeholder: 'Enter Age'
+                },
+                {
+                    label: 'DOJ',
+                    type: 'date',
+                    placeholder: 'Select Date of Joining'
+                },
+                {
+                    label: 'Status',
+                    type: 'select',
+                    options: ['Active', 'Inactive'],
+                    placeholder: 'Select Status'
+                },
+                {
+                    label: 'Contact Number',
+                    type: 'number',
+                    placeholder: 'Enter Contact Number'
+                }
+            ]
+        }
+        console.log(JSON.stringify(schema))
+    </script>
+</body>
+</html>
